@@ -11,9 +11,9 @@ const User = require("../../models/User");
 
 
 const client = new plaid.Client(
-  process.env.PLAID_CLIENT_ID,
-  process.env.PLAID_SECRET,
-  process.env.PLAID_PUBLIC_KEY,
+  process.env.REACT_APP_PLAID_PUBLIC_KEY,
+  process.env.REACT_APP_PLAID_SECRET,
+  process.env.REACT_APP_PLAID_PUBLIC_KEY,
   plaid.environments.development,
   { version: "2018-05-22" }
 );
